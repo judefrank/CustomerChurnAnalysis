@@ -1,25 +1,57 @@
-# Analysis of Customer Churn
+# Telco Customer Churn Analysis
 
 ## Table of Contents
 
 - [Project Overview](#project-overiew)
-- [Data Sources](#data-sources)
-- [Recommendations](#recommendations)
+- [Dataset](#dataset)
+- [Analysis Goals](#analysis-goals)
 
 ### Project Overview
-This project aims to analyze customer churn behavior using historical data. The goal is to understand key factors contributing to customer attrition and build predictive models to help businesses proactively retain at-risk customers.
+This repository contains an analysis of customer churn for a telecommunications company. The dataset includes customer demographics, service details, account information, and whether the customer churned (left the service). The goal of this analysis is to identify patterns and factors that influence customer churn and provide actionable insights to reduce churn rates.
 
+
+### Dataset
+- customerID: Unique identifier for each customer.
+- gender: Customer's gender (Male/Female).
+- SeniorCitizen: Indicates if the customer is a senior citizen (1) or not (0).
+- Partner: Whether the customer has a partner (Yes/No).
+- Dependents: Whether the customer has dependents (Yes/No).
+- tenure: Number of months the customer has stayed with the company.
+- PhoneService: Whether the customer has a phone service (Yes/No).
+- MultipleLines: Whether the customer has multiple lines (Yes/No/No phone service).
+- InternetService: Type of internet service (DSL, Fiber optic, No).
+- OnlineSecurity: Whether the customer has online security (Yes/No/No internet service).
+- OnlineBackup: Whether the customer has online backup (Yes/No/No internet service).
+- DeviceProtection: Whether the customer has device protection (Yes/No/No internet service).
+- TechSupport: Whether the customer has tech support (Yes/No/No internet service).
+- StreamingTV: Whether the customer has streaming TV (Yes/No/No internet service).
+- StreamingMovies: Whether the customer has streaming movies (Yes/No/No internet service).
+- Contract: Type of contract (Month-to-month, One year, Two year).
+- PaperlessBilling: Whether the customer uses paperless billing (Yes/No).
+- PaymentMethod: Payment method (Electronic check, Mailed check, Bank transfer, Credit card).
+- MonthlyCharges: Monthly charges for the customer.
+- TotalCharges: Total charges for the customer.
+- Churn: Whether the customer churned (Yes/No).
+
+### Analysis Goals
+1. Exploratory Data Analysis (EDA): Understand the distribution of features and their relationship with churn.
+2. Feature Importance: Identify which features are most predictive of churn.
+3. Predictive Modeling: Build a model to predict customer churn.
+4. Actionable Insights: Provide recommendations to reduce churn based on the analysis.
+
+<!--
 ### Objectives
 - Perform Exploratory Data Analysis (EDA) on customer data.
 - Identify trends and patterns in churn behavior.
 - Build predictive models to classify customers likely to churn.
 - Provide actionable insights and business recommendations.
+-->
 
 ### Visuals
 ![Response Payload](https://github.com/user-attachments/assets/ed615960-9614-4716-9b26-69c28939ed56)
 
 
-
+<!--
 ### Business Insights
 - Customers with longer call durations but low customer support interaction are less likely to churn.
 - Monthly contract customers are at higher risk of churn than annual contract customers.
