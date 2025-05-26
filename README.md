@@ -15,6 +15,11 @@ This project aims to analyze customer churn behavior using historical data. The 
 - Build predictive models to classify customers likely to churn.
 - Provide actionable insights and business recommendations.
 
+### Visuals
+![Response Payload](https://github.com/user-attachments/assets/ed615960-9614-4716-9b26-69c28939ed56)
+
+
+
 ### Business Insights
 - Customers with longer call durations but low customer support interaction are less likely to churn.
 - Monthly contract customers are at higher risk of churn than annual contract customers.
