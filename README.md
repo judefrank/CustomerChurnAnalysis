@@ -59,5 +59,17 @@ Promote use of auto-pay or credit card payments which are associated with lower 
 ### Limitations
 
 💻
+|S/N|Tools|
+|---|---|
+|1|Excel|
+|2|SQL|
+|3|PowerBI|
 
+`column1`
+
+
+**bold**
+
+
+*italic*
 
