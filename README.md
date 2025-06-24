@@ -44,26 +44,30 @@ Several new fields were created in Excel to support enhanced analysis:
 
 - **Tenure in Years**  
   Converted the `tenure` field from months to full years:
+  
   =ROUNDDOWN(tenure / 12, 0)
   
 - **Churn Counter**  
-Created a boolean flag for churned customers:
-=IF(Churn = "Yes", 1, 0)
+  Created a boolean flag for churned customers:
+
+  =IF(Churn = "Yes", 1, 0)
 
 - **Total Counter**  
-Ensured no duplicate customer IDs using `COUNTIF`:
-=COUNTIF(customerID_range, customerID)
+  Ensured no duplicate customer IDs using `COUNTIF`:
 
-- Churn Rate: Defined as:
-=Churn Counter / Total Counter
-Used in pivot tables to evaluate churn intensity across segments.
+   =COUNTIF(customerID_range, customerID)
 
+- Churn Rate: Defined as -->
+
+   =Churn Counter / Total Counter
+
+  Used in pivot tables to evaluate churn intensity across segments.
 
 - **Churn Rate**  
-Calculated churn rate within each group (used in pivot tables):
+  Calculated churn rate within each group (used in pivot tables):
 
 
-These derived columns allowed for meaningful segmentation and aggregation in pivot table analysis, enabling clearer insights on churn behavior across demographics and service categories.
+  These derived columns allowed for meaningful segmentation and aggregation in pivot table analysis, enabling clearer insights on churn behavior across demographics and service categories.
 
 
 ## 📈 Exploratory Analysis (Pivot Table)
@@ -75,15 +79,19 @@ Pivot tables were created to examine churn behavior across key segments:
 - Tenure in Years
 
 #### 🧮 Values:
-- Total Counter – total number of customers in each segment.
-- Churn Rate – proportion of customers who churned.
-- Average Monthly Charges – financial weight of each customer segment.
+- Total Counter: total number of customers in each segment.
+- Churn Rate: proportion of customers who churned.
+- Average Monthly Charges: financial weight of each customer segment.
 
 #### 🧮 Analysis Goals
 1. Exploratory Data Analysis (EDA): Understand the distribution of features and their relationship with churn.
 2. Feature Importance: Identify which features are most predictive of churn.
 3. Predictive Modeling: Build a model to predict customer churn.
 4. Actionable Insights: Provide recommendations to reduce churn based on the analysis.
+
+#### 📊 Visualizations
+Excel charts were created to visualize churn rate trends and churn comparison across different segments:
+
 
 <!--
 ### Objectives
