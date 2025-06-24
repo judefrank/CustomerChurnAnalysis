@@ -3,14 +3,20 @@
 ## Table of Contents
 
 - [Project Overview](#project-overiew)
+- [Key Objectives](#key-objectives)
+-  [Data Preparation](#data-preparation)
 - [Dataset](#dataset)
 - [Analysis Goals](#analysis-goals)
 
-### Project Overview
+### 📂 Project Overview
 This repository contains an analysis of customer churn for a telecommunications company. The dataset includes customer demographics, service details, account information, and whether the customer churned (left the service). The goal of this analysis is to identify patterns and factors that influence customer churn and provide actionable insights to reduce churn rates.
 
+### 🧰 Key Objectives
+- Analyze customer churn trends based on contract types, tenure, and gender.
+- Derive and utilize additional metrics to support clearer insights.
+- Identify segments with high churn rates and opportunities for retention.
 
-### Dataset
+### 📊 Dataset
 - customerID: Unique identifier for each customer.
 - gender: Customer's gender (Male/Female).
 - SeniorCitizen: Indicates if the customer is a senior citizen (1) or not (0).
@@ -33,7 +39,47 @@ This repository contains an analysis of customer churn for a telecommunications 
 - TotalCharges: Total charges for the customer.
 - Churn: Whether the customer churned (Yes/No).
 
-### Analysis Goals
+## 🧹 Data Preparation
+Several new fields were created in Excel to support enhanced analysis:
+
+- **Tenure in Years**  
+  Converted the `tenure` field from months to full years:
+  =ROUNDDOWN(tenure / 12, 0)
+  
+- **Churn Counter**  
+Created a boolean flag for churned customers:
+=IF(Churn = "Yes", 1, 0)
+
+- **Total Counter**  
+Ensured no duplicate customer IDs using `COUNTIF`:
+=COUNTIF(customerID_range, customerID)
+
+- Churn Rate: Defined as:
+=Churn Counter / Total Counter
+Used in pivot tables to evaluate churn intensity across segments.
+
+
+- **Churn Rate**  
+Calculated churn rate within each group (used in pivot tables):
+
+
+These derived columns allowed for meaningful segmentation and aggregation in pivot table analysis, enabling clearer insights on churn behavior across demographics and service categories.
+
+
+## 📈 Exploratory Analysis (Pivot Table)
+Pivot tables were created to examine churn behavior across key segments:
+
+#### 🎯 Rows:
+- Contract Type
+- Gender
+- Tenure in Years
+
+#### 🧮 Values:
+- Total Counter – total number of customers in each segment.
+- Churn Rate – proportion of customers who churned.
+- Average Monthly Charges – financial weight of each customer segment.
+
+#### 🧮 Analysis Goals
 1. Exploratory Data Analysis (EDA): Understand the distribution of features and their relationship with churn.
 2. Feature Importance: Identify which features are most predictive of churn.
 3. Predictive Modeling: Build a model to predict customer churn.
