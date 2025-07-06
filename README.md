@@ -76,7 +76,8 @@ Pivot tables were created to examine churn behavior across key segments:
 #### 🎯 Rows:
 - Contract Type
 - Gender
-- Tenure in Years
+- Billing System
+- Partnership Status
 
 #### 🧮 Values:
 - Total Counter: total number of customers in each segment.
@@ -101,7 +102,50 @@ Excel charts were created to visualize churn rate trends and churn comparison ac
 - Provide actionable insights and business recommendations.
 -->
 
-### Visuals
+### Visuals (Analysis Per Contract Type)
+![Analysis Per Contract Type](https://github.com/user-attachments/assets/023b8483-0c22-4ee5-b146-da7746f19c2d)
+
+### Insights:
+
+- Month-to-month contracts show significantly higher churn (42.7%), despite having only a slightly higher monthly charge than longer-term plans.
+- Customers on Two-year contracts have extremely low churn (2.8%), indicating stronger loyalty.
+- Incentivizing longer contract commitments (possibly with minor discounts) could significantly reduce churn.
+
+### Visuals (Analysis Per Gender)
+![Analysis Per Gender](https://github.com/user-attachments/assets/65b287c3-61f2-4b5e-8398-ce1908dd58b0)
+
+### Insights:
+- Gender has minimal impact on churn in your dataset (less than 1% difference).
+- Monthly charges are also similar. Gender may not be a valuable segmentation variable for churn intervention.
+
+### Visuals (Analysis Per Partnership Status)
+![Analysis Per Partnership Status](https://github.com/user-attachments/assets/19eaf199-b76f-4360-beb2-313dfb646211)
+
+### Insights:
+- Non-partnered individuals churn 68% more than partnered ones.
+- Despite paying less, non-partnered users churn more, suggesting that financial burden isn’t the only driver. It could relate to perceived value or engagement levels.
+- Consider engagement programs targeted at single customers, e.g., loyalty perks, social referrals, or content-based retention campaigns.
+
+### Visuals (Analysis Per Billing System)
+![Analysis Per Billing System](https://github.com/user-attachments/assets/4a2befcf-6060-4f21-8b01-cff49e3b3881)
+
+### Insights:
+- Paperless billing customers churn twice as much as those on paper-based billing.
+- They also pay much higher monthly fees (₦73.55 vs. ₦51.99).
+- This suggests a possible price sensitivity or digital fatigue effect. Customers paying more (and possibly seeing less human interaction) may feel less loyalty.
+- Investigate whether digital bill recipients are getting sufficient value communication. Consider personalized outreach or bundling benefits with e-billing.
+
+### 🔍 Overall Strategic Insights:
+1. Contract length is the strongest predictor of churn — targeting customers on month-to-month contracts for upgrades could significantly reduce churn.
+2. Partnership status and billing type are high-influence behavioral factors; they might reflect lifestyle and digital preferences that can be strategically addressed.
+3. Gender has little impact, so interventions should focus more on contract type, billing behavior, and relationship status.
+4. Higher-paying customers are not necessarily more loyal, especially those using paperless billing — you need to improve perceived value for high spenders.
+
+
+
+
+
+
 
 
 
