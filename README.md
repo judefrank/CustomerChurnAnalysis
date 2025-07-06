@@ -4,7 +4,7 @@
 
 - [Project Overview](#project-overiew)
 - [Key Objectives](#key-objectives)
--  [Data Preparation](#data-preparation)
+- [Data Preparation](#data-preparation)
 - [Dataset](#dataset)
 - [Analysis Goals](#analysis-goals)
 
