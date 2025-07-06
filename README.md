@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Project Overview](#project-overiew)
+- [Project Overview](#project-overview)
 - [Key Objectives](#key-objectives)
 - [Data Preparation](#data-preparation)
 - [Dataset](#dataset)
