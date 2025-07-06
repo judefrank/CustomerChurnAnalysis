@@ -16,28 +16,8 @@ This repository contains an analysis of customer churn for a telecommunications 
 - Derive and utilize additional metrics to support clearer insights.
 - Identify segments with high churn rates and opportunities for retention.
 
-### 📊 Dataset
-- customerID: Unique identifier for each customer.
-- gender: Customer's gender (Male/Female).
-- SeniorCitizen: Indicates if the customer is a senior citizen (1) or not (0).
-- Partner: Whether the customer has a partner (Yes/No).
-- Dependents: Whether the customer has dependents (Yes/No).
-- tenure: Number of months the customer has stayed with the company.
-- PhoneService: Whether the customer has a phone service (Yes/No).
-- MultipleLines: Whether the customer has multiple lines (Yes/No/No phone service).
-- InternetService: Type of internet service (DSL, Fiber optic, No).
-- OnlineSecurity: Whether the customer has online security (Yes/No/No internet service).
-- OnlineBackup: Whether the customer has online backup (Yes/No/No internet service).
-- DeviceProtection: Whether the customer has device protection (Yes/No/No internet service).
-- TechSupport: Whether the customer has tech support (Yes/No/No internet service).
-- StreamingTV: Whether the customer has streaming TV (Yes/No/No internet service).
-- StreamingMovies: Whether the customer has streaming movies (Yes/No/No internet service).
-- Contract: Type of contract (Month-to-month, One year, Two year).
-- PaperlessBilling: Whether the customer uses paperless billing (Yes/No).
-- PaymentMethod: Payment method (Electronic check, Mailed check, Bank transfer, Credit card).
-- MonthlyCharges: Monthly charges for the customer.
-- TotalCharges: Total charges for the customer.
-- Churn: Whether the customer churned (Yes/No).
+### 📊 Dataset Used
+<a href="https://github.com/judefrank/CustomerChurnAnalysis/raw/main/Churn%20Analysis%20Project.xlsx" target="_blank">Customer Churn Analysis Data Set</a>
 
 ## 🧹 Data Preparation
 Several new fields were created in Excel to support enhanced analysis:
@@ -66,9 +46,7 @@ Several new fields were created in Excel to support enhanced analysis:
 - **Churn Rate**  
   Calculated churn rate within each group (used in pivot tables):
 
-
   These derived columns allowed for meaningful segmentation and aggregation in pivot table analysis, enabling clearer insights on churn behavior across demographics and service categories.
-
 
 ## 📈 Exploratory Analysis (Pivot Table)
 Pivot tables were created to examine churn behavior across key segments:
@@ -102,7 +80,7 @@ Excel charts were created to visualize churn rate trends and churn comparison ac
 - Provide actionable insights and business recommendations.
 -->
 
-### Visuals (Analysis Per Contract Type)
+### Dashboard (Analysis Per Contract Type)
 ![Analysis Per Contract Type](https://github.com/user-attachments/assets/023b8483-0c22-4ee5-b146-da7746f19c2d)
 
 ### Insights:
@@ -111,14 +89,14 @@ Excel charts were created to visualize churn rate trends and churn comparison ac
 - Customers on Two-year contracts have extremely low churn (2.8%), indicating stronger loyalty.
 - Incentivizing longer contract commitments (possibly with minor discounts) could significantly reduce churn.
 
-### Visuals (Analysis Per Gender)
+### Dashboa (Analysis Per Gender)
 ![Analysis Per Gender](https://github.com/user-attachments/assets/65b287c3-61f2-4b5e-8398-ce1908dd58b0)
 
 ### Insights:
 - Gender has minimal impact on churn in your dataset (less than 1% difference).
 - Monthly charges are also similar. Gender may not be a valuable segmentation variable for churn intervention.
 
-### Visuals (Analysis Per Partnership Status)
+### Dashboard (Analysis Per Partnership Status)
 ![Analysis Per Partnership Status](https://github.com/user-attachments/assets/19eaf199-b76f-4360-beb2-313dfb646211)
 
 ### Insights:
@@ -126,7 +104,7 @@ Excel charts were created to visualize churn rate trends and churn comparison ac
 - Despite paying less, non-partnered users churn more, suggesting that financial burden isn’t the only driver. It could relate to perceived value or engagement levels.
 - Consider engagement programs targeted at single customers, e.g., loyalty perks, social referrals, or content-based retention campaigns.
 
-### Visuals (Analysis Per Billing System)
+### Dashboard (Analysis Per Billing System)
 ![Analysis Per Billing System](https://github.com/user-attachments/assets/4a2befcf-6060-4f21-8b01-cff49e3b3881)
 
 ### Insights:
