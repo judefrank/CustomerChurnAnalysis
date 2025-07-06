@@ -102,7 +102,7 @@ Excel charts were created to visualize churn rate trends and churn comparison ac
 -->
 
 ### Visuals
-![Response Payload](https://github.com/user-attachments/assets/ed615960-9614-4716-9b26-69c28939ed56)
+
 
 
 <!--
