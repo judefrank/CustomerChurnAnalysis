@@ -1,13 +1,17 @@
 # Telco Customer Churn Analysis
 
+<!--
 ## Table of Contents
 
-- [Project Overview](#project-overview)
+- ## Table of Contents
+
+- [📂 Project Overview](#-project-overview)
 - [Key Objectives](#key-objectives)
 - [Data Preparation](#data-preparation)
 - [Dataset Used](#dataset-used)
 - [Analysis Goals](#analysis-goals)
-
+-->
+  
 ## 📂 Project Overview
 This repository contains an analysis of customer churn for a telecommunications company. The dataset includes customer demographics, service details, account information, and whether the customer churned (left the service). The goal of this analysis is to identify patterns and factors that influence customer churn and provide actionable insights to reduce churn rates.
 
@@ -62,7 +66,7 @@ Pivot tables were created to examine churn behavior across key segments:
 - Churn Rate: proportion of customers who churned.
 - Average Monthly Charges: financial weight of each customer segment.
 
-#### 🧮 Analysis Goals
+#### 🧠 Analysis Goals
 1. Exploratory Data Analysis (EDA): Understand the distribution of features and their relationship with churn.
 2. Feature Importance: Identify which features are most predictive of churn.
 3. Predictive Modeling: Build a model to predict customer churn.
